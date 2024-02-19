@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  python3:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/usr/src/app
+    command: bash
+    ports:
+      - 8080:8080
